@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: white;
+    margin: 0;
+    padding: 30px 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  main {
+    background-color: rgb(221, 221, 221);
+    padding: 5px 10px;
+  }
+  
+  main > h1, main > p {
+    text-align: center;
+      padding: 10px;
+  }
+  
+  .wrapper {
+    background-color: white;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  
+  figcaption {
+    text-align: center;
+    padding: 2% 5%;
+  }
+  
+  section {
+    text-align: center;
+    padding: 5% 25%;
+  }
+  
+  section > ul {
+    text-align: left;
+  }
+  
+  a {
+    color: rgb(85, 185, 236);
+  }
+  
+  section {
+    text-align: center;
+    padding: 5% 25%;
+  }
+  
+  li {
+    margin: 20px 0;
+  }
+  
+  i {
+    padding: 10%;
+  }
+  
