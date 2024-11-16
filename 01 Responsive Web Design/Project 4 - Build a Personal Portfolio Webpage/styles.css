@@ -1,0 +1,218 @@
+/* VARIABLES */
+:root {
+    --primary-color: #be3144;
+    --secondary-color: #303841;
+    --highlight-color: rgba(14, 14, 130, 0.512);
+    --text-color: white;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Railway', sans-serif;
+    --font-large: 4.5rem;
+    --font-medium: 2.5rem;
+    --spacing-large: 20px;
+    --spacing-small: 10px;
+  }
+  
+  /* RESET */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--secondary-color); /* Optional: Set background color */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* NAVIGATION */
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-large);
+    padding-right: 40px;
+    font-size: 1.5rem;
+    height: 70px;
+  }
+  
+  nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 110px;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  nav a:hover {
+    background-color: var(--highlight-color);
+  }
+  
+  /* WELCOME SECTION */
+  #welcome-section {
+    background-color: rgb(49, 47, 47);
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .welcome-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .welcome-heading h1 {
+    font-family: var(--font-secondary);
+    font-size: var(--font-large);
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .welcome-heading h2 {
+    font-family: var(--font-secondary);
+    font-size: var(--font-medium);
+    font-style: italic;
+    color: rgb(198, 63, 63);
+  }
+  
+  /* PROJECTS SECTION */
+  #projects {
+    background-color: #45567d;
+    padding: var(--spacing-large) 0 150px;
+    text-align: center;
+  }
+  
+  .project-heading {
+    font-family: var(--font-primary);
+    font-size: 2.3rem;
+    font-weight: 400;
+    width: 600px;
+    margin: 100px auto 50px;
+    border-bottom: 2px solid var(--text-color);
+  }
+  
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(340px, 380px));
+    gap: 120px 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .card p {
+    background-color: var(--secondary-color);
+    font-size: 1.5rem;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card .code {
+    color: var(--secondary-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  .card:hover .code {
+    color: var(--primary-color);
+  }
+  
+  /* CONTACT SECTION */
+  #contact {
+    background-color: var(--secondary-color);
+    padding: 10% 0 150px;
+    text-align: center;
+  }
+  
+  #contact h1 {
+    font-family: var(--font-secondary);
+    font-size: 6rem;
+  }
+  
+  #contact p {
+    font-family: var(--font-secondary);
+    font-style: italic;
+    font-size: 1rem;
+    padding-top: var(--spacing-small);
+  }
+  
+  .contact-details {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .contact-icons a:hover {
+    transform: translateY(10px);
+  }
+  
+  /* FOOTER */
+  footer {
+    border-top: 4px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 4%;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 1092px) {
+    .flex {
+      grid-template-columns: repeat(2, minmax(400px, 480px));
+    }
+    .card:last-of-type {
+      margin-bottom: 100px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    nav {
+      justify-content: center;
+    }
+    ul {
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 732px) {
+    .flex {
+        grid-template-columns: minmax(350px, 440px);
+        grid-auto-rows: minmax(350px, 1fr);
+        margin-right: 20px;
+    }
+  }
